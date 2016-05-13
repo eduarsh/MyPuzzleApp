@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Game"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bg">
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_camera"
+        android:layout_marginRight="10dp"
+        android:onClick="openCamera"
+        android:background="@drawable/foto"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share"
+       android:layout_toLeftOf="@+id/btn_camera"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_share" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_r"
+        android:background="@drawable/top_back"
+        android:layout_below="@+id/btn_camera"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="128dp"
+        android:id="@+id/top_image"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        />
+        <ImageView
+            android:layout_width="272dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:cropToPadding="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/round"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_r"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btm_back">
+
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:numColumns="4"
+        android:columnWidth="60dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+    </GridView>
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:cropToPadding="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/round_big"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
